@@ -3,21 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SkyLine Premium Ceilings</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>SkyLine</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        .hero { animation: fadeIn 2s; text-align: center; padding: 50px; background-color: #f8f9fa; }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+        .statistics, .services, .gallery, .contact { padding: 20px; }
+        .card { border: 1px solid #ddd; margin: 10px; padding: 15px; border-radius: 5px; }
+        .gallery img { max-width: 100%; height: auto; }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to SkyLine Premium Ceilings</h1>
-    </header>
-    <main>
-        <section>
-            <p>Your premium solution for ceiling designs.</p>
-            <p>Explore our range of products and services.</p>
-        </section>
-    </main>
+    <section class="hero">
+        <h1>Welcome to SkyLine</h1>
+        <p>Your one-stop solution for stunning visuals.</p>
+    </section>
+    <section class="statistics">
+        <h2>Our Achievements</h2>
+        <p>We have completed over 100 projects and served 500+ clients.</p>
+    </section>
+    <section class="services">
+        <h2>Services</h2>
+        <div class="card">Service 1 Description</div>
+        <div class="card">Service 2 Description</div>
+        <div class="card">Service 3 Description</div>
+    </section>
+    <section class="gallery">
+        <h2>Photo Gallery</h2>
+        <img src="image1.jpg" alt="Gallery Image 1">
+        <img src="image2.jpg" alt="Gallery Image 2">
+    </section>
+    <section class="tiles">
+        <h2>3D Interactive Ceiling Tiles</h2>
+        <p>Explore our 3D tiles interactively.</p>
+    </section>
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
     <footer>
-        <p>&copy; 2026 SkyLine Premium Ceilings. All rights reserved.</p>
+        <a href="https://wa.me/1234567890">WhatsApp</a>
+        <a href="https://t.me/yourtelegram">Telegram</a>
     </footer>
 </body>
 </html>
