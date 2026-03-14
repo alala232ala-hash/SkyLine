@@ -3,52 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SkyLine</title>
+    <title>Skyline Premium Ceilings</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-        .hero { animation: fadeIn 2s; text-align: center; padding: 50px; background-color: #f8f9fa; }
+        body { margin: 0; font-family: Arial, sans-serif; overflow-x: hidden; }
+        .hero { position: relative; height: 100vh; background: linear-gradient(to bottom, #f8f8f8, #f1f1f1); animation: fadeIn 2s; }
         @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
-        .statistics, .services, .gallery, .contact { padding: 20px; }
-        .card { border: 1px solid #ddd; margin: 10px; padding: 15px; border-radius: 5px; }
-        .gallery img { max-width: 100%; height: auto; }
+        .stats { display: grid; grid-template-columns: repeat(3, 1fr); padding: 20px; }
+        .service-card { transition: transform 0.3s; background: linear-gradient(45deg, #ff6b6b, #f06595); padding: 20px; margin: 10px; }
+        .service-card:hover { transform: scale(1.05); }
+        .gallery { display: grid; grid-template-columns: repeat(3, 1fr); } 
+        .gallery img { width: 100%; transition: transform 0.3s; }
+        .gallery img:hover { transform: scale(1.1); }
+        /* Other styles here for elements like input, navigation */
     </style>
 </head>
 <body>
-    <section class="hero">
-        <h1>Welcome to SkyLine</h1>
-        <p>Your one-stop solution for stunning visuals.</p>
-    </section>
-    <section class="statistics">
-        <h2>Our Achievements</h2>
-        <p>We have completed over 100 projects and served 500+ clients.</p>
-    </section>
-    <section class="services">
-        <h2>Services</h2>
-        <div class="card">Service 1 Description</div>
-        <div class="card">Service 2 Description</div>
-        <div class="card">Service 3 Description</div>
-    </section>
-    <section class="gallery">
-        <h2>Photo Gallery</h2>
-        <img src="image1.jpg" alt="Gallery Image 1">
-        <img src="image2.jpg" alt="Gallery Image 2">
-    </section>
-    <section class="tiles">
-        <h2>3D Interactive Ceiling Tiles</h2>
-        <p>Explore our 3D tiles interactively.</p>
-    </section>
-    <section class="contact">
-        <h2>Contact Us</h2>
-        <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
-            <button type="submit">Send</button>
-        </form>
-    </section>
-    <footer>
-        <a href="https://wa.me/1234567890">WhatsApp</a>
-        <a href="https://t.me/yourtelegram">Telegram</a>
-    </footer>
+    <div class="hero">
+        <h1>Welcome to Skyline Premium Ceilings</h1>
+    </div>
+    <div class="stats">
+        <div>Statistic 1</div>
+        <div>Statistic 2</div>
+        <div>Statistic 3</div>
+    </div>
+    <div class="services">
+        <div class="service-card">Service 1</div>
+        <div class="service-card">Service 2</div>
+        <div class="service-card">Service 3</div>
+    </div>
+    <div class="gallery">
+        <img src="https://source.unsplash.com/random/300x300?sig=1" alt="Image 1">
+        <img src="https://source.unsplash.com/random/300x300?sig=2" alt="Image 2">
+        <img src="https://source.unsplash.com/random/300x300?sig=3" alt="Image 3">
+    </div>
+    <form>
+        <input type="text" placeholder="Your Name" />
+        <input type="email" placeholder="Your Email" />
+        <button type="submit">Submit</button>
+    </form>
+    <script>
+        // Interactive 3D interactions and smooth scrolling here
+    </script>
 </body>
 </html>
